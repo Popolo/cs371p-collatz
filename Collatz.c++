@@ -46,7 +46,6 @@ int collatz_eval (int i, int j) {
                 current = current * 3 + 1;
                 value++;
             }
-            cout << current << endl;
         }       
         if(value > maxvalue)
             maxvalue = value;
