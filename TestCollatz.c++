@@ -35,6 +35,18 @@ TEST(Collatz, read) {
     ASSERT_EQ( 1, p.first);
     ASSERT_EQ(10, p.second);}
 
+TEST(Collatz, read_2) {
+    string s("22 32\n");
+    const pair<int, int> p = collatz_read(s);
+    ASSERT_EQ( 22, p.first);
+    ASSERT_EQ(32, p.second);}
+
+TEST(Collatz, read_3) {
+    string s("5 6\n");
+    const pair<int, int> p = collatz_read(s);
+    ASSERT_EQ( 1, p.first);
+    ASSERT_EQ(10, p.second);}
+
 // ----
 // eval
 // ----
@@ -55,6 +67,10 @@ TEST(Collatz, eval_4) {
     const int v = collatz_eval(900, 1000);
     ASSERT_EQ(174, v);}
 
+TEST(Collatz, eval_5) {
+    const int v = collatz_eval(1, 1);
+    ASSERT_EQ(1, v);}
+
 // -----
 // print
 // -----
@@ -63,6 +79,16 @@ TEST(Collatz, print) {
     ostringstream w;
     collatz_print(w, 1, 10, 20);
     ASSERT_EQ("1 10 20\n", w.str());}
+
+TEST(Collatz, print_2) {
+    ostringstream w;
+    collatz_print(w, 3, 2, 20);
+    ASSERT_EQ("3 2 20\n", w.str());}
+
+TEST(Collatz, print_3) {
+    ostringstream w;
+    collatz_print(w, 1, 1, 1);
+    ASSERT_EQ("1 1 1\n", w.str());}
 
 // -----
 // solve
