@@ -34,8 +34,25 @@ pair<int, int> collatz_read (const string& s) {
 // ------------
 
 int collatz_eval (int i, int j) {
-    // <your code>
-    return 1;}
+    int maxvalue = 1;
+    for(int i; i <= j; i++){
+        int value = 1;
+        int current = i;
+        while(current != 1){
+            if(0 == current%2){
+                current /= 2;
+                value++;
+            }else{
+                current = current * 3 + 1;
+                value++;
+            }
+            cout << current << endl;
+        }       
+        if(value > maxvalue)
+            maxvalue = value;
+    }
+    return maxvalue;
+}
 
 // -------------
 // collatz_print
