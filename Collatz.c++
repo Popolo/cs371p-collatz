@@ -35,7 +35,7 @@ pair<int, int> collatz_read (const string& s) {
 
 int collatz_eval (int i, int j) {
     int maxvalue = 1;
-    for(int i; i <= j; i++){
+    for(; i <= j; i++){
         int value = 1;
         int current = i;
         while(current != 1){
