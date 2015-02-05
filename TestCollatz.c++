@@ -44,8 +44,8 @@ TEST(Collatz, read_2) {
 TEST(Collatz, read_3) {
     string s("5 6\n");
     const pair<int, int> p = collatz_read(s);
-    ASSERT_EQ( 1, p.first);
-    ASSERT_EQ(10, p.second);}
+    ASSERT_EQ( 5, p.first);
+    ASSERT_EQ(6, p.second);}
 
 // ----
 // eval
