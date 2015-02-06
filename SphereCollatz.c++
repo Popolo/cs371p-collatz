@@ -19,15 +19,6 @@
 
 using namespace std;
 
-// ----
-// main
-// ----
-
-int main () {
-    using namespace std;
-    collatz_solve(cin, cout);
-    return 0;}
-    
 // ------------
 // collatz_read
 // ------------
@@ -82,3 +73,12 @@ void collatz_solve (istream& r, ostream& w) {
         const int            j = p.second;
         const int            v = collatz_eval(i, j);
         collatz_print(w, i, j, v);}}
+
+// ----
+// main
+// ----
+
+int main () {
+    using namespace std;
+    collatz_solve(cin, cout);
+    return 0;}
