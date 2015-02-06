@@ -37,20 +37,27 @@ int collatz_eval (long i, long j) {
     long maxvalue = 1;
     long max = fmax(i,j);
     long min = fmin(i,j);
+    long cache [1000000];
     
     if(i < j){}
     for(int c = min; c <= max; c++){
         long value = 1;
         long current = c;
         while(current != 1){
-            if(0 == current%2){
-                current /= 2;
-                value++;
+            if (cache[current] == 0){
+                if(0 == current%2){
+                    current /= 2;
+                    value++;
+                }else{
+                    current = current * 3 + 1;
+                    value++;
+                }
             }else{
-                current = current * 3 + 1;
-                value++;
+                value = cache[current] + value;
+                break;
             }
-        }       
+        }
+        cache[c] = value;       
         if(value > maxvalue)
             maxvalue = value;
     }
