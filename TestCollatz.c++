@@ -14,6 +14,7 @@
 #include <sstream>  // istringtstream, ostringstream
 #include <string>   // string
 #include <utility>  // pair
+#include <fstream> // file input stream
 
 #include "gtest/gtest.h"
 
@@ -31,19 +32,19 @@ using namespace std;
 
 TEST(Collatz, read) {
     string s("1 10\n");
-    const pair<int, int> p = collatz_read(s);
+    const pair<long, long> p = collatz_read(s);
     ASSERT_EQ( 1, p.first);
     ASSERT_EQ(10, p.second);}
 
 TEST(Collatz, read_2) {
     string s("22 32\n");
-    const pair<int, int> p = collatz_read(s);
+    const pair<long, long> p = collatz_read(s);
     ASSERT_EQ( 22, p.first);
     ASSERT_EQ(32, p.second);}
 
 TEST(Collatz, read_3) {
     string s("5 6\n");
-    const pair<int, int> p = collatz_read(s);
+    const pair<long, long> p = collatz_read(s);
     ASSERT_EQ( 5, p.first);
     ASSERT_EQ(6, p.second);}
 
@@ -52,23 +53,23 @@ TEST(Collatz, read_3) {
 // ----
 
 TEST(Collatz, eval_1) {
-    const int v = collatz_eval(1, 10);
+    const long v = collatz_eval(1, 10);
     ASSERT_EQ(20, v);}
 
 TEST(Collatz, eval_2) {
-    const int v = collatz_eval(100, 200);
+    const long v = collatz_eval(100, 200);
     ASSERT_EQ(125, v);}
 
 TEST(Collatz, eval_3) {
-    const int v = collatz_eval(201, 210);
+    const long v = collatz_eval(201, 210);
     ASSERT_EQ(89, v);}
 
 TEST(Collatz, eval_4) {
-    const int v = collatz_eval(900, 1000);
+    const long v = collatz_eval(900, 1000);
     ASSERT_EQ(174, v);}
 
 TEST(Collatz, eval_5) {
-    const int v = collatz_eval(1, 1);
+    const long v = collatz_eval(1, 1);
     ASSERT_EQ(1, v);}
 
 // -----
@@ -99,6 +100,18 @@ TEST(Collatz, solve) {
     ostringstream w;
     collatz_solve(r, w);
     ASSERT_EQ("1 10 20\n100 200 125\n201 210 89\n900 1000 174\n", w.str());}
+
+TEST(Collatz, major_solve){
+    string one;
+    string two;
+    ifstream r("ckv244-RunCollatz.in");
+    ofstream w("ckv244-RunCollatzTest.out");
+    ifstream win("ckv244-RunCollatzTest.out");
+    ifstream cin("ckv244-RunCollatz.out");
+    collatz_solve(r, w);
+    while(getline(win, one) && getline(cin, two)){
+    ASSERT_EQ(one, two);}
+}
 
 /*
 % ls -al /usr/include/gtest/

@@ -22,10 +22,10 @@ using namespace std;
 // collatz_read
 // ------------
 
-pair<int, int> collatz_read (const string& s) {
+pair<long, long> collatz_read (const string& s) {
     istringstream sin(s);
-    int i;
-    int j;
+    long i;
+    long j;
     sin >> i >> j;
     return make_pair(i, j);}
 
