@@ -69,8 +69,8 @@ TEST(Collatz, eval_4) {
     ASSERT_EQ(174, v);}
 
 TEST(Collatz, eval_5) {
-    const long v = collatz_eval(1, 1);
-    ASSERT_EQ(1, v);}
+    const long v = collatz_eval(1, 1000000);
+    ASSERT_EQ(525, v);}
 
 // -----
 // print
