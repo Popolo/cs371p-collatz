@@ -23,10 +23,10 @@ using namespace std;
 // collatz_read
 // ------------
 
-pair<int, int> collatz_read (const string& s) {
+pair<long, long> collatz_read (const string& s) {
     istringstream sin(s);
-    int i;
-    int j;
+    long i;
+    long j;
     sin >> i >> j;
     return make_pair(i, j);}
 
@@ -34,11 +34,11 @@ pair<int, int> collatz_read (const string& s) {
 // collatz_eval
 // ------------
 
-int collatz_eval (int i, int j) {
-    int maxvalue = 1;
-    for(; i <= j; i++){
-        int value = 1;
-        int current = i;
+int collatz_eval (long i, long j) {
+    long maxvalue = 1;
+    for(int c = i; c <= j; c++){
+        long value = 1;
+        long current = c;
         while(current != 1){
             if(0 == current%2){
                 current /= 2;
@@ -58,7 +58,7 @@ int collatz_eval (int i, int j) {
 // collatz_print
 // -------------
 
-void collatz_print (ostream& w, int i, int j, int v) {
+void collatz_print (ostream& w, long i, long j, long v) {
     w << i << " " << j << " " << v << endl;}
 
 // -------------
@@ -68,10 +68,10 @@ void collatz_print (ostream& w, int i, int j, int v) {
 void collatz_solve (istream& r, ostream& w) {
     string s;
     while (getline(r, s)) {
-        const pair<int, int> p = collatz_read(s);
-        const int            i = p.first;
-        const int            j = p.second;
-        const int            v = collatz_eval(i, j);
+        const pair<long, long> p = collatz_read(s);
+        const long            i = p.first;
+        const long            j = p.second;
+        const long            v = collatz_eval(i, j);
         collatz_print(w, i, j, v);}}
 
 // ----
@@ -79,6 +79,5 @@ void collatz_solve (istream& r, ostream& w) {
 // ----
 
 int main () {
-    using namespace std;
     collatz_solve(cin, cout);
     return 0;}
