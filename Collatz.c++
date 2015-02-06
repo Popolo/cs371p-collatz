@@ -13,6 +13,7 @@
 #include <sstream>  // istringstream
 #include <string>   // getline, string
 #include <utility>  // make_pair, pair
+#include <cmath>
 
 #include "Collatz.h"
 
@@ -33,11 +34,15 @@ pair<int, int> collatz_read (const string& s) {
 // collatz_eval
 // ------------
 
-int collatz_eval (int i, int j) {
-    int maxvalue = 1;
-    for(; i <= j; i++){
-        int value = 1;
-        int current = i;
+int collatz_eval (long i, long j) {
+    long maxvalue = 1;
+    long max = fmax(i,j);
+    long min = fmin(i,j);
+    
+    if(i < j){}
+    for(int c = min; c <= max; c++){
+        long value = 1;
+        long current = c;
         while(current != 1){
             if(0 == current%2){
                 current /= 2;
