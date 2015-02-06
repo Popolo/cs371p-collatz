@@ -18,10 +18,10 @@
 #include "Collatz.h"
 
 using namespace std;
-// ------------
-// collatz_read
-// ------------
 
+/** Converts the given string into a pair of numbers.
+* @param s The string to convert, must be of the form "# #".
+*/
 pair<long, long> collatz_read (const string& s) {
     istringstream sin(s);
     long i;
@@ -29,10 +29,10 @@ pair<long, long> collatz_read (const string& s) {
     sin >> i >> j;
     return make_pair(i, j);}
 
-// ------------
-// collatz_eval
-// ------------
 
+/** Finds the greatest value of the Collatz algorithm for the range between two given numbers.
+* @param i, j The max and min of the range, order insensitive.
+*/
 int collatz_eval (long i, long j) {
     long maxvalue = 1;
     long max = fmax(i,j);
@@ -67,17 +67,19 @@ int collatz_eval (long i, long j) {
     return maxvalue;
 }
 
-// -------------
-// collatz_print
-// -------------
+/** Prints an output formatted for Sphere.
+* @param w The desired output location
+* @param i, j The two inputs.
+* @param v The output for the inputs.
+*/
 
 void collatz_print (ostream& w, long i, long j, long v) {
     w << i << " " << j << " " << v << endl;}
 
-// -------------
-// collatz_solve
-// -------------
-
+/** Inputs, solves, and outputs the solutions for the Collatz problem.
+* @param r The input location.
+* @param w The output location.
+*/
 void collatz_solve (istream& r, ostream& w) {
     string s;
     while (getline(r, s)) {

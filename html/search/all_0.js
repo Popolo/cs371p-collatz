@@ -1,0 +1,9 @@
+var searchData=
+[
+  ['collatz_2ec_2b_2b',['Collatz.c++',['../Collatz_8c_09_09.html',1,'']]],
+  ['collatz_2eh',['Collatz.h',['../Collatz_8h.html',1,'']]],
+  ['collatz_5feval',['collatz_eval',['../Collatz_8c_09_09.html#a74f149e10cebb9295e4c3e40ee4074c9',1,'collatz_eval(long i, long j):&#160;Collatz.c++'],['../Collatz_8h.html#a74f149e10cebb9295e4c3e40ee4074c9',1,'collatz_eval(long i, long j):&#160;Collatz.c++'],['../SphereCollatz_8c_09_09.html#a74f149e10cebb9295e4c3e40ee4074c9',1,'collatz_eval(long i, long j):&#160;SphereCollatz.c++']]],
+  ['collatz_5fprint',['collatz_print',['../Collatz_8c_09_09.html#ad3b4f0819787f7b700f8610f1ad90622',1,'collatz_print(ostream &amp;w, long i, long j, long v):&#160;Collatz.c++'],['../Collatz_8h.html#ad3b4f0819787f7b700f8610f1ad90622',1,'collatz_print(ostream &amp;w, long i, long j, long v):&#160;Collatz.c++'],['../SphereCollatz_8c_09_09.html#ad3b4f0819787f7b700f8610f1ad90622',1,'collatz_print(ostream &amp;w, long i, long j, long v):&#160;SphereCollatz.c++']]],
+  ['collatz_5fread',['collatz_read',['../Collatz_8c_09_09.html#ab51038b4a258c935dff4c6b3933bbb82',1,'collatz_read(const string &amp;s):&#160;Collatz.c++'],['../Collatz_8h.html#ab51038b4a258c935dff4c6b3933bbb82',1,'collatz_read(const string &amp;s):&#160;Collatz.c++'],['../SphereCollatz_8c_09_09.html#ab51038b4a258c935dff4c6b3933bbb82',1,'collatz_read(const string &amp;s):&#160;SphereCollatz.c++']]],
+  ['collatz_5fsolve',['collatz_solve',['../Collatz_8c_09_09.html#a0ac646d2122741f9a9a52201bf9551cc',1,'collatz_solve(istream &amp;r, ostream &amp;w):&#160;Collatz.c++'],['../Collatz_8h.html#a0ac646d2122741f9a9a52201bf9551cc',1,'collatz_solve(istream &amp;r, ostream &amp;w):&#160;Collatz.c++'],['../SphereCollatz_8c_09_09.html#a0ac646d2122741f9a9a52201bf9551cc',1,'collatz_solve(istream &amp;r, ostream &amp;w):&#160;SphereCollatz.c++']]]
+];

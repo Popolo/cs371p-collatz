@@ -7,12 +7,14 @@
 
 #include "Collatz.h"
 
+/** Number of new tests to make.
+*
+*/
 const int tests_to_make = 100;
 
-// ----
-// main
-// ----
-
+/** Creates new tests, according to tests_to_make.
+*
+*/
 int main () {
     using namespace std;
     std::ifstream in("Collatz.in.txt");
