@@ -24,6 +24,9 @@ TestCollatz.out: TestCollatz
 	gcov -b Collatz.c++     >> TestCollatz.out
 	gcov -b TestCollatz.c++ >> TestCollatz.out
 
+NewTests: Collatz.c++ Collatz.h MakeCollatzTests.c++
+	g++ -pedantic -std=c++11 -Wall Collatz.c++ MakeCollatzTests.c++ -o MakeTests
+
 clean:
 	rm -f *.gcda
 	rm -f *.gcno

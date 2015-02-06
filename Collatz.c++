@@ -18,7 +18,6 @@
 #include "Collatz.h"
 
 using namespace std;
-
 // ------------
 // collatz_read
 // ------------
@@ -62,7 +61,7 @@ int collatz_eval (long i, long j) {
 // collatz_print
 // -------------
 
-void collatz_print (ostream& w, int i, int j, int v) {
+void collatz_print (ostream& w, long i, long j, long v) {
     w << i << " " << j << " " << v << endl;}
 
 // -------------
@@ -72,8 +71,8 @@ void collatz_print (ostream& w, int i, int j, int v) {
 void collatz_solve (istream& r, ostream& w) {
     string s;
     while (getline(r, s)) {
-        const pair<int, int> p = collatz_read(s);
-        const int            i = p.first;
-        const int            j = p.second;
-        const int            v = collatz_eval(i, j);
+        const pair<long, long> p = collatz_read(s);
+        const long            i = p.first;
+        const long            j = p.second;
+        const long            v = collatz_eval(i, j);
         collatz_print(w, i, j, v);}}
