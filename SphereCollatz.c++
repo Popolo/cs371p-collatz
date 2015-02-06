@@ -36,8 +36,12 @@ pair<long, long> collatz_read (const string& s) {
 
 int collatz_eval (long i, long j) {
     long maxvalue = 1;
-    for(int c = i; c <= j; c++){
-        long value = 1;
+    long max = (i < j) ? j : i;
+    long min = (i > j) ? j : i;
+    long value = 1;
+    
+    if(i < j){}
+    for(int c = min; c <= max; c++){
         long current = c;
         while(current != 1){
             if(0 == current%2){
