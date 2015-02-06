@@ -19,8 +19,8 @@ RunCollatz.tmp: RunCollatz RunCollatz.in
 TestCollatz: Collatz.h Collatz.c++ TestCollatz.c++
 	g++ -fprofile-arcs -ftest-coverage -pedantic -std=c++11 -Wall Collatz.c++ TestCollatz.c++ -o TestCollatz -lgtest -lgtest_main -lpthread
 
-TestCollatz.out: TestCollatz
-	valgrind TestCollatz        >  TestCollatz.out 2>&1
+TestCollatz.out: ./TestCollatz
+	valgrind ./TestCollatz        >  TestCollatz.out 2>&1
 	gcov -b Collatz.c++     >> TestCollatz.out
 	gcov -b TestCollatz.c++ >> TestCollatz.out
 
