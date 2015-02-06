@@ -40,15 +40,14 @@ int collatz_eval (long i, long j) {
     long max = fmax(i,j);
     long min = fmin(i,j);
     long cache [1000001];
-    for (int i = 0; i < cache.Length; i++){
-    	cache[i] = 0;
-	}
-    
+    for (long i = 0; i < 1000001; i++){
+        cache[i] = 0;
+    }
     for(long c = min; c <= max; c++){
         long value = 1;
         long current = c;
         while(current != 1){
-            if (cache[current - 1] == 0){
+            if ( current > 1000001 || cache[current - 1] == 0){
                 if(0 == current%2){
                     current /= 2;
                     value++;
@@ -62,7 +61,7 @@ int collatz_eval (long i, long j) {
             }
         }
         if(cache[c - 1] != 0){
-        	cache[c - 1] = value;
+            cache[c - 1] = value;
         }       
         if(value > maxvalue)
             maxvalue = value;

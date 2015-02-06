@@ -45,7 +45,7 @@ int collatz_eval (long i, long j) {
         long value = 1;
         long current = c;
         while(current != 1){
-            if (cache[current - 1] == 0){
+            if ( current > 1000001 || cache[current - 1] == 0){
                 if(0 == current%2){
                     current /= 2;
                     value++;
