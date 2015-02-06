@@ -1,0 +1,131 @@
+commit 775b7b6211856fcc4475a43d935ff6a8c4613ccb
+Author: C. Vernino <cvernino@tx.rr.com>
+Date:   Thu Feb 5 21:32:14 2015 -0600
+
+    Added doxygen
+
+commit 6aefa059cc465fdd730501247e9849055f6c922c
+Author: C. Vernino <cvernino@tx.rr.com>
+Date:   Thu Feb 5 21:02:35 2015 -0600
+
+    Fixed Cache Overflow
+
+commit 15b3eb98343396aaafcf3e48e5e44086771a0c02
+Author: C. Vernino <cvernino@tx.rr.com>
+Date:   Thu Feb 5 20:56:27 2015 -0600
+
+    No Good Deed
+
+commit 54b76d166705023e3ad91ddbe4790b529be0c809
+Author: C. Vernino <cvernino@tx.rr.com>
+Date:   Thu Feb 5 20:29:45 2015 -0600
+
+    Updated SphereCOllatz
+
+commit 6be8c969fde7ebe8fde221eb810b333cfad4d082
+Author: C. Vernino <cvernino@tx.rr.com>
+Date:   Thu Feb 5 20:27:54 2015 -0600
+
+    Added a simple cache
+
+commit 9d17e728436492a2b1e1d44c40414e0f1a00317b
+Author: C. Vernino <cvernino@tx.rr.com>
+Date:   Thu Feb 5 20:11:59 2015 -0600
+
+    Fixed Makefile
+
+commit 276509cf688d9979b3b0d4a7e025113eea02257d
+Author: C. Vernino <cvernino@tx.rr.com>
+Date:   Thu Feb 5 20:07:46 2015 -0600
+
+    Added Major Test
+
+commit 80df0de39f16cfa083ee83ddefda61c6debf1386
+Author: C. Vernino <cvernino@tx.rr.com>
+Date:   Thu Feb 5 20:07:32 2015 -0600
+
+    Added Major Test
+
+commit cc65ce804b6f798b63afe7cfcf3d556f1d7ee161
+Author: C. Vernino <cvernino@tx.rr.com>
+Date:   Thu Feb 5 19:34:19 2015 -0600
+
+    Many Tests
+
+commit c6bacc098cba3abfdda4b2d418abc2d6a8fd51dc
+Author: C. Vernino <cvernino@tx.rr.com>
+Date:   Thu Feb 5 19:04:30 2015 -0600
+
+    Updated Collatz.c++
+
+commit dcfcd03b97d599c2bac46df9f305d08debcdb84e
+Author: C. Vernino <cvernino@tx.rr.com>
+Date:   Thu Feb 5 19:00:27 2015 -0600
+
+    Fixed Massive Returns
+
+commit f62de51c973073d0074db1011492786e2cb6723f
+Author: C. Vernino <cvernino@tx.rr.com>
+Date:   Thu Feb 5 18:53:03 2015 -0600
+
+    Ordering allowed
+
+commit d319a552def6189e64b6a2a21d0053493df190be
+Author: C. Vernino <cvernino@tx.rr.com>
+Date:   Thu Feb 5 18:44:02 2015 -0600
+
+    Works for large numbers
+
+commit 7519bf1ab0417fbb43cce03d97d124f04401a8eb
+Author: C. Vernino <cvernino@tx.rr.com>
+Date:   Thu Feb 5 18:05:04 2015 -0600
+
+    SphereCollatz compile error resolved
+
+commit ca674735e3de2523c8053bd46e53cf2f6c2e7637
+Author: C. Vernino <cvernino@tx.rr.com>
+Date:   Thu Feb 5 17:57:05 2015 -0600
+
+    Created SphereCollatz
+
+commit 84794abac6f7e98f2fa2eb8382566011abe6547b
+Author: C. Vernino <cvernino@tx.rr.com>
+Date:   Thu Feb 5 17:51:07 2015 -0600
+
+    Fixed broken test and extraneous output.
+
+commit 12367368f4477acc53cbb0fee73a692fc721dcc8
+Author: C. Vernino <cvernino@tx.rr.com>
+Date:   Thu Feb 5 17:49:16 2015 -0600
+
+    Corrected current = 0 bug
+
+commit 810fea7e2b678739350166073c2a47ee96c31374
+Author: C. Vernino <cvernino@tx.rr.com>
+Date:   Thu Feb 5 17:46:21 2015 -0600
+
+    Initial Collatz Version
+
+commit 5b3bc569c6b376f6029c411c92be7ac6185d105b
+Author: C. Vernino <cvernino@tx.rr.com>
+Date:   Thu Feb 5 17:34:46 2015 -0600
+
+    Fixed broken unit tests.
+
+commit 560e187735b9ae192af942a7f972f81b373f9ecb
+Author: C. Vernino <cvernino@tx.rr.com>
+Date:   Thu Feb 5 17:32:42 2015 -0600
+
+    Made additional tests
+
+commit 93e1504ac69437e1bf885c7e95fcb88e85c63484
+Author: C. Vernino <cvernino@tx.rr.com>
+Date:   Thu Feb 5 17:22:25 2015 -0600
+
+    Fixed Tests
+
+commit 9019fdbcba66030827ccbf70b0fde7dcbb444af3
+Author: C. Vernino <cvernino@tx.rr.com>
+Date:   Sun Feb 1 15:04:14 2015 -0600
+
+    initial commit
