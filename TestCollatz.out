@@ -1,0 +1,40 @@
+==6479== Memcheck, a memory error detector
+==6479== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==6479== Using Valgrind-3.10.0.SVN and LibVEX; rerun with -h for copyright info
+==6479== Command: ./TestCollatz
+==6479== 
+Running main() from gtest_main.cc
+[==========] Running 13 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 13 tests from Collatz
+[ RUN      ] Collatz.read
+[       OK ] Collatz.read (0 ms)
+[ RUN      ] Collatz.read_2
+[       OK ] Collatz.read_2 (0 ms)
+[ RUN      ] Collatz.read_3
+[       OK ] Collatz.read_3 (0 ms)
+[ RUN      ] Collatz.eval_1
+[       OK ] Collatz.eval_1 (0 ms)
+[ RUN      ] Collatz.eval_2
+[       OK ] Collatz.eval_2 (0 ms)
+[ RUN      ] Collatz.eval_3
+[       OK ] Collatz.eval_3 (0 ms)
+[ RUN      ] Collatz.eval_4
+[       OK ] Collatz.eval_4 (1 ms)
+[ RUN      ] Collatz.eval_5
+[       OK ] Collatz.eval_5 (0 ms)
+[ RUN      ] Collatz.print
+[       OK ] Collatz.print (0 ms)
+[ RUN      ] Collatz.print_2
+[       OK ] Collatz.print_2 (0 ms)
+[ RUN      ] Collatz.print_3
+[       OK ] Collatz.print_3 (0 ms)
+[ RUN      ] Collatz.solve
+[       OK ] Collatz.solve (0 ms)
+[ RUN      ] Collatz.major_solve
+[       OK ] Collatz.major_solve (18878 ms)
+[----------] 13 tests from Collatz (18879 ms total)
+
+[----------] Global test environment tear-down
+[==========] 13 tests from 1 test case ran. (18879 ms total)
+[  PASSED  ] 13 tests.
